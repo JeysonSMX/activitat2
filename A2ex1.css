@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Estils per a l'Exercici 1 (A2ex1.css) - Versió suau / neutra
+   ========================================================================== */
+
+/* 1. Regla per a body: tipus de lletra "serif", mida 1.2em i fons gris molt clar i suau */
+body {
+    font-family: serif;
+    font-size: 1.2em;
+    background-color: #f8f9fa; /* Fons neutre suau en lloc del rosa #fddaef */
+    color: #2c3e50;           /* Color de text fosc però no agressiu */
+    margin: 20px;
+}
+
+/* 2. Regla per al paràgraf general: altura de línia del 125% */
+p {
+    line-height: 125%;
+}
+
+/* 3. Títol de primer nivell: color blau suau i lletra Arial */
+h1 {
+    color: #1a73e8;
+    font-family: Arial, sans-serif;
+}
+
+/* 4. Títols de segon, tercer i altres nivells: color morat suau i lletra Arial */
+h2, h3, h4, h5, h6 {
+    color: #7b1fa2;
+    font-family: Arial, sans-serif;
+}
+
+/* 5. Caixa per al codi Python: vorera 1px contínua i fons blanc */
+.codi-python {
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    padding: 10px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* 6. Paràgraf amb ID especial: primera lletra en negreta i mida del 300% */
+#parraf-especial::first-letter {
+    font-weight: bold;
+    font-size: 300%;
+}
+
+/* 7. Classe 1 (.destacat): estil en cursiva i color blau fosc elegant */
+.destacat {
+    font-style: italic;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* 8. Classe 2 (.nota): fons gris clar, vorera lateral i farciment */
+.nota {
+    background-color: #f1f3f4;
+    border-left: 4px solid #5f6368;
+    padding: 8px 12px;
+}
