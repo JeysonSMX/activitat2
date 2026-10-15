@@ -1,1 +1,193 @@
+/* ==========================================================================
+   Full d'estils general per al lloc web de One Piece (estils.css)
+   ========================================================================== */
 
+/* Reset bàsic i configuració del fons general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Fons groc característic com al model imatge-article.png */
+    background-color: #f7e025;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Capçalera i Menú de Navegació
+   ========================================================================== */
+.capcalera-principal {
+    background-color: #3d3d3d;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.img-logo-top {
+    max-height: 50px;
+    margin-bottom: 8px;
+}
+
+.menu-navegacio {
+    background-color: #2b2b2b;
+    border-top: 1px solid #444;
+}
+
+.menu-navegacio ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 8px 0;
+}
+
+.menu-navegacio a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+/* Enllaç actiu de la pàgina actual en taronja */
+.menu-navegacio a.enllac-actiu {
+    color: #ff6600;
+}
+
+/* Efecte hover per als enllaços del menú */
+.menu-navegacio a:hover {
+    color: #ff6600;
+}
+
+/* ==========================================================================
+   Contenidor Principal i Estructura de l'Article
+   ========================================================================== */
+.contenidor-principal {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Títol de l'article */
+h1 {
+    font-size: 1.8em;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+/* Metadades: data i icones socials */
+.metadades-article {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.85em;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.icona-social {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+/* Imatge principal de l'article centrada */
+.imatge-destacada {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imatge-destacada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+/* Estils de text i paràgrafs */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: #111111;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 4px;
+}
+
+/* Llista de curiositats */
+ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* ==========================================================================
+   Regles per als Enllaços de l'Article
+   ========================================================================== */
+/* Per defecte els enllaços de text són de color taronja, sense subratllat */
+a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+/* Hover: canvia al color de text base (#333) i afegeix vorera contínua inferior */
+a:hover {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+}
+
+/* Enllaços socials i d'imatges sense vorera inferior en hover */
+.xarxes-socials a:hover,
+.peu-pagina a:hover {
+    border-bottom: none;
+}
+
+.enllaços-finals {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Contenidor del vídeo de X (Twitter) */
+.bloc-video-x {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+/* ==========================================================================
+   Peu de Pàgina (Footer)
+   ========================================================================== */
+.peu-pagina {
+    background-color: #8e44ad; /* Color lila del peu com al model */
+    padding: 15px 0;
+    margin-top: 0;
+}
+
+.contenidor-peu {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-fandom {
+    height: 35px;
+}
+
+.logo-onepiece-footer {
+    height: 35px;
+}
